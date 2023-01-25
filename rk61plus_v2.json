@@ -1,0 +1,120 @@
+{
+  "title": "Oji's RK61 Plus Hybrid Tier v2",
+  "maintainers": [
+    "oji"
+  ],
+  "rules": [
+    {
+      "description": "[RK61 Plus Mod] left_shift + esc → ~, esc → `",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "optional": [
+                "left_shift",
+                "left_command",
+                "left_control",
+                "left_option"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "grave_accent_and_tilde"
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": false,
+                  "is_keyboard": true,
+                  "is_pointing_device": false,
+                  "vendor_id": 9610,
+                  "product_id":248
+                },
+                {
+                  "is_built_in_keyboard": false,
+                  "is_keyboard": true,
+                  "is_pointing_device": false,
+                  "vendor_id": 14,
+                  "product_id":13330
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[RK61 Plus Mod] normalize shift+up_arrow behaviour to select mode instead send ? key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers":{
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to":[
+            {
+              "key_code": "up_arrow",
+              "modifiers" : "left_shift"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "is_built_in_keyboard": false,
+                  "is_keyboard": true,
+                  "is_pointing_device": false,
+                  "vendor_id": 9610,
+                  "product_id":248
+                },
+                {
+                  "is_built_in_keyboard": false,
+                  "is_keyboard": true,
+                  "is_pointing_device": false,
+                  "vendor_id": 14,
+                  "product_id":13330
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[RK61 Plus Mod] back",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                  "key_code": "equal_sign"
+              },
+              {
+                  "key_code": "delete_or_backspace"
+              }
+            ],
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
