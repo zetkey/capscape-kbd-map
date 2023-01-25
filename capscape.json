@@ -1,11 +1,11 @@
 {
-  "title": "CapsLock Plus Ozi Mod v2",
+  "title": "Capscape",
   "maintainers": ["Ozi"],
-  "homepage": "https://github.com/zetkey/Capscape_RK61Plus",
-  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/BryanHoo/Capslock-Plus/master/capslock-plus.json",
+  "homepage": "https://github.com/zetkey/capscape-kbd-map",
+  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/zetkey/capscape-kbd-map/master/capscape.json",
   "rules": [
     {
-      "description": "CapsLock to Hyper/Escape",
+      "description": "[Capscape] CapsLock to Hyper/Escape",
       "manipulators": [
         {
           "type": "basic",
@@ -52,27 +52,6 @@
           ]
         },
         {
-          "description": "Language switch",
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": ["left_control"]
-            }
-          ]
-        },
-        {
           "description": "Control C",
           "type": "basic",
           "from": {
@@ -96,7 +75,7 @@
       ]
     },
     {
-      "description": "Hyper Cursor navigation",
+      "description": "[Capscape] Cursor navigation",
       "manipulators": [
         {
           "description" : "up_arrow",
@@ -355,7 +334,7 @@
       ]
     },
     {
-      "description": "Hyper More",
+      "description": "[Capscape] More",
       "manipulators": [
         {
           "from": {
@@ -453,50 +432,6 @@
           "to": [
             {
               "shell_command": "open -a 'finder'"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "description":"move one space right",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option",
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": ["left_control"]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "description":"move one space left",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option",
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": ["left_control"]
             }
           ],
           "type": "basic"

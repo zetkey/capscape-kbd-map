@@ -1,8 +1,8 @@
 {
-  "title": "Oji's RK61 Plus Hybrid Tier v2",
-  "maintainers": [
-    "oji"
-  ],
+  "title": "Capscape RK61 Plus",
+  "maintainers": ["zetkey"],
+  "homepage": "https://github.com/zetkey/capscape-kbd-map",
+  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/zetkey/capscape-kbd-map/master/capscape-rk61plus.json",
   "rules": [
     {
       "description": "[RK61 Plus Mod] left_shift + esc → ~, esc → `",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "description": "[RK61 Plus Mod] back",
+      "description": "[RK61 Plus Mod] forward delete",
       "manipulators": [
         {
           "type": "basic",
