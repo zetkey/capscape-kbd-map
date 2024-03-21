@@ -1,11 +1,13 @@
 {
   "title": "Capscape RK61 Plus",
-  "maintainers": ["zetkey"],
+  "maintainers": [
+    "zetkey"
+  ],
   "homepage": "https://github.com/zetkey/capscape-kbd-map",
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/zetkey/capscape-kbd-map/master/capscape-rk61plus.json",
   "rules": [
     {
-      "description": "[RK61 Plus Mod] left_shift + esc → ~, esc → `",
+      "description": "[RK61 Plus / NuphyAir60 Mod] left_shift + esc → ~, esc → `",
       "manipulators": [
         {
           "type": "basic",
@@ -32,14 +34,21 @@
                   "is_keyboard": true,
                   "is_pointing_device": false,
                   "vendor_id": 9610,
-                  "product_id":248
+                  "product_id": 248
                 },
                 {
                   "is_built_in_keyboard": false,
                   "is_keyboard": true,
                   "is_pointing_device": false,
                   "vendor_id": 14,
-                  "product_id":13330
+                  "product_id": 13330
+                },
+                {
+                  "is_built_in_keyboard": false,
+                  "is_keyboard": true,
+                  "is_pointing_device": false,
+                  "vendor_id": 1452,
+                  "product_id": 591
                 }
               ]
             }
@@ -54,16 +63,16 @@
           "type": "basic",
           "from": {
             "key_code": "slash",
-            "modifiers":{
+            "modifiers": {
               "mandatory": [
                 "right_shift"
               ]
             }
           },
-          "to":[
+          "to": [
             {
               "key_code": "up_arrow",
-              "modifiers" : "left_shift"
+              "modifiers": "left_shift"
             }
           ],
           "conditions": [
@@ -75,14 +84,14 @@
                   "is_keyboard": true,
                   "is_pointing_device": false,
                   "vendor_id": 9610,
-                  "product_id":248
+                  "product_id": 248
                 },
                 {
                   "is_built_in_keyboard": false,
                   "is_keyboard": true,
                   "is_pointing_device": false,
                   "vendor_id": 14,
-                  "product_id":13330
+                  "product_id": 13330
                 }
               ]
             }
@@ -98,14 +107,16 @@
           "from": {
             "simultaneous": [
               {
-                  "key_code": "equal_sign"
+                "key_code": "equal_sign"
               },
               {
-                  "key_code": "delete_or_backspace"
+                "key_code": "delete_or_backspace"
               }
             ],
             "modifiers": {
-              "optional": ["any"]
+              "optional": [
+                "any"
+              ]
             }
           },
           "to": [

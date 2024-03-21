@@ -1,6 +1,6 @@
 {
   "title": "Capscape",
-  "maintainers": ["Ozi"],
+  "maintainers": ["zetkey"],
   "homepage": "https://github.com/zetkey/capscape-kbd-map",
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/zetkey/capscape-kbd-map/master/capscape.json",
   "rules": [
